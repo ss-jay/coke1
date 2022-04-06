@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Unity";
+    src: url('/coke/assets/fonts/Unity/Unity-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Unity";
+    src: url('/coke/assets/fonts/Unity/Unity-Italic.ttf');
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Unity";
+    src: url('/coke/assets/fonts/Unity/Unity-Bold.ttf');
+    font-style: bold;
+    font-weight: 900;
+
+}
+
+@font-face {
+    font-family: "Unity";
+    src: url('/coke/assets/fonts/Unity/Unity-BoldItalic.ttf');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Unity Condensed";
+    src: url('/coke/assets/fonts/UnityCondensed/UnityCond-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Unity Condensed";
+    font-weight: 400;
+    src: url('/coke/assets/fonts/UnityCondensed/UnityCond-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Unity";
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #fff5f5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
