@@ -49,6 +49,7 @@ function loadPageContent(page) {
 
 function insertSearchBar() {
             console.log("Inside insertSearchBar =>", config);
+    console.log("Inside insertSearchBar => search_input =>", document.getElementById("search_input"));
     document.getElementById("search_input").placeholder = config.search.placeholder;
 }
 
