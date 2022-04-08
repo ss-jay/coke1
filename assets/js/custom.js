@@ -24,7 +24,6 @@
 })();
 
 function loadPageContent(page) {
-    console.log("page is loading");
     if(page === "homepage") {
         insertSearchBar();
         insertTabContainer();
