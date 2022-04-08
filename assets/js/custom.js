@@ -1,6 +1,6 @@
 (function () {
     setTimeout(() => {
-                  loadPageContent("homepage")
+//                   loadPageContent("homepage")
         
         console.log("This is custom.js file");
         window.addEventListener('message', function (eventData) {
@@ -13,6 +13,7 @@
               if (JSON.parse(eventData.data)) {
                   let event = JSON.parse(eventData.data);
                   console.log("1.2", event)
+                  loadPageContent("homepage")
                   console.log("AFTER :: page is loading");
               }
 
