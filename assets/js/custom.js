@@ -12,7 +12,7 @@
                   let event = JSON.parse(eventData.data);
                   console.log("1.2", event)
                   loadPageContent("homepage")
-                  console.log("AFTER :: page is loading');
+                  console.log("AFTER :: page is loading");
               }
 
           } catch (error) {
