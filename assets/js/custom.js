@@ -13,6 +13,7 @@
                 console.log("1.2", event)
                 if (event.data.data) {
                     config = event.data.data;
+                    console.log("this is config obj", config);
                 }
                 loadPageContent("homepage")
                 console.log("AFTER :: page is loading");
