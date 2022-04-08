@@ -11,6 +11,9 @@
             if (JSON.parse(eventData.data)) {
                 let event = JSON.parse(eventData.data);
                 console.log("1.2", event)
+                if (event.data.data) {
+                    config = event.data.data;
+                }
                 loadPageContent("homepage")
                 console.log("AFTER :: page is loading");
             }
