@@ -126,6 +126,7 @@ function insertProducts() {
 }
 
 function insertInnerProducts() {
+    console.log("Inside product function =>", config);
     config.products.map((product, index) => {
         let listitem = "#products_container_inner" + index;
         product.items.map((item) => {
