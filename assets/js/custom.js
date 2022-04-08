@@ -12,11 +12,12 @@ var config = {};
             console.log("1.1 Main event -> event_code => ", mainEvent.event_code);
             console.log("1.1 Main event -> event_code -> data  => ", mainEvent.data);
             console.log("1.1.1 Main event -> event_code -> data -> code  => ", mainEvent.data.code);
+            console.log("1.1.2 Main event -> event_code -> data -> data  => ", mainEvent.data.data);
             if (mainEvent && mainEvent.event_code == 'custom-event') {
                 console.log("In if loop");
                 let event = JSON.parse(eventData.data);
                 console.log("1.2 ", event.data.data);
-                if (event.data.data) {
+                if (mainEvent.data.code == 'all_lables') {
                     config = event.data.data;
                     console.log("this is config obj", config);
                 }
