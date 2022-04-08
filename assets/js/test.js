@@ -1,7 +1,7 @@
 console.log("This is test.js file");
 
 window.addEventListener('message', function (eventData) {
-  console.log("CHECKING FOR EVENT : SHIV");
+  console.log("CHECKING FOR EVENT : Test");
   console.log(eventData);
   try {
       console.log("1 => ", eventData);
