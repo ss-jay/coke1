@@ -9,7 +9,8 @@ var config = {};
         try {
             const mainEvent = JSON.parse(eventData.data);
             console.log("1.1 Main event => ", mainEvent);
-            
+            console.log("1.1 Main event -> event_code => ", mainEvent.event_code);
+            console.log("1.1 Main event -> event_code -> data  => ", mainEvent.event_code.data);
             if (mainEvent && mainEvent.event_code == 'custom-event') {
                 console.log("In if loop");
                 let event = JSON.parse(eventData.data);
