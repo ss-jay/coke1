@@ -2,7 +2,7 @@
     setTimeout(() => {
         console.log("This is custom.js file");
         window.addEventListener('message', function (eventData) {
-          console.log("CHECKING FOR EVENT : SHIV");
+          console.log("CHECKING FOR EVENT : Custom");
           console.log(eventData);
           try {
               console.log("1 => ", eventData);
