@@ -7,13 +7,13 @@ var config = {};
         console.log("CHECKING FOR EVENT : Custom");
         console.log(eventData);
         try {
-            console.log("1 => ", eventData);
-            console.log("1.1 => ", JSON.parse(eventData.data));
             const mainEvent = JSON.parse(eventData.data);
+            console.log("1.1 Main event => ", mainEvent);
             
-            if (mainEvent && mainEvent.event_code === 'custom_event') {
+            if (mainEvent && mainEvent.event_code == 'custom_event') {
+                console.log("In if loop");
                 let event = JSON.parse(eventData.data);
-                console.log("1.2", event.data.data)
+                console.log("1.2 ", event.data.data);
                 if (event.data.data) {
                     config = event.data.data;
                     console.log("this is config obj", config);
