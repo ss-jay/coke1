@@ -48,10 +48,12 @@ function loadPageContent(page) {
 }
 
 function insertSearchBar() {
+            console.log("Inside insertSearchBar =>", config);
     document.getElementById("search_input").placeholder = config.search.placeholder;
 }
 
 function insertTabContainer() {
+        console.log("Inside insertTabContainer =>", config);
     $("#tab_container").prepend(`<p class="title">${config.tabs_section.tabs_title}</p>`)
     config.tabs_section.tabs.map((val, tabNum) => {
         let classname = val.active ? "'grid__item active'" : "'grid__item'";
@@ -71,6 +73,7 @@ function removeTabContainer(id) {
 }
 
 function insertPromotionsContainer() {
+        console.log("Inside insertPromotionsContainer =>", config);
     $("#promotions_container").prepend(`<p class="products__title">${config.promotions.promotions_title}</p>`)
     config.promotions.products.map((promotion) => {
         $("#promotions_products_container").append(`
@@ -95,6 +98,7 @@ function insertPromotionsContainer() {
 }
 
 function insertFilterBar() {
+            console.log("Inside insertFilterBar =>", config);
     if(!($("#product_header_bar").is(":visible"))) {
         $("#product_header_bar").css('display', 'flex');
     }
@@ -105,6 +109,7 @@ function insertFilterBar() {
 }
 
 function insertProducts() {
+                console.log("Inside insertProducts =>", config);
     config.products.map((product, index) => {
         $("#product_item_container").append(`
             <div class="faq-drawer">
