@@ -20,6 +20,7 @@ var config = {};
                 if (mainEvent.data.code == 'all_lables') {
                     config = mainEvent.data.data;
                     console.log("this is config obj", config);
+                    console.log("this is config products", config.products);
                 }
                 loadPageContent("homepage")
                 console.log("AFTER :: page is loading");
