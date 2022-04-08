@@ -9,8 +9,9 @@ var config = {};
         try {
             console.log("1 => ", eventData);
             console.log("1.1 => ", JSON.parse(eventData.data));
-
-            if (JSON.parse(eventData.data)) {
+            const mainEvent = JSON.parse(eventData.data);
+            
+            if (mainEvent && mainEvent.event_code === 'custom_event') {
                 let event = JSON.parse(eventData.data);
                 console.log("1.2", event.data.data)
                 if (event.data.data) {
