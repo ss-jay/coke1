@@ -1,3 +1,5 @@
+var config = {};
+
 (function () {
     setTimeout(() => {
       console.log("This is custom.js file");
@@ -29,7 +31,7 @@
 })();
 
 function loadPageContent(page) {
-      console.log("Page is loading");
+    console.log("Page is loading", config);
     if(page === "homepage") {
         insertSearchBar();
         insertTabContainer();
