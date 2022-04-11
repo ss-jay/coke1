@@ -140,14 +140,14 @@ function insertInnerProducts() {
                 <div class="product-card">
                     <div class="product-tumb inner">
                         <div class="innerbox">
-                            <img class="img__wrapper" src=${item.icon} alt="">
+                            <img class="img__wrapper" src="https://cdn.yellowmessenger.com/Zswcic99hKO91633420423934.png" alt="">
                         </div>
                     </div>
                     <div class="product__details inner">
                         <div class="product__text__wrapper">
-                            <p class="product__name">${item.name}</p>
-                            <p class="product__quantity">${item.description}</p>
-                            <p class="product__price">${item.price}</p>
+                            <p class="product__name">Test Product</p>
+                            <p class="product__quantity">Test description</p>
+                            <p class="product__price">$12</p>
                         </div>
                         <div class="product-bottom-details">
                             <div class="btn">ADD</div>
