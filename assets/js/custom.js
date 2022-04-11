@@ -2,6 +2,7 @@ var config = {};
 
 (function () {
     setTimeout(() => {
+    loadPageContent("homepage")
       console.log("This is custom.js file");
       window.addEventListener('message', function (eventData) {
         console.log("CHECKING FOR EVENT : Custom");
@@ -22,7 +23,6 @@ var config = {};
                     console.log("this is config obj", config);
                     console.log("this is config products", config.products);
                 }
-                loadPageContent("homepage")
                 console.log("AFTER :: page is loading");
             }
 
